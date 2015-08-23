@@ -76,6 +76,34 @@ Main Components
 	color: wheat;
 	cursor: pointer;
 }
+#contactus
+{
+	width: 80vw;
+	height: 100vh;
+	margin: 0px auto 0px auto;
+}
+#contactus > div
+{
+	float: left;
+	width: 20vw;
+	height: 120vh;	
+	text-align: center;
+}
+#contactus > div > span
+{
+	top: 5vh;
+}
+#contactus > div > span > img
+{
+	height: 15vh;
+	border-radius: 50%;
+	background-position: center;
+	
+}
+#contactus > div > span > p
+{
+	line-height: normal;
+}
 .projects-container::before {
   /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
@@ -108,7 +136,7 @@ Main Components
   left: 0;
   height: 20vh;
   width: 100%;
-  background-image: url("../img/img-1-large.jpg");
+  background-image: url("");
   background-repeat: no-repeat;
   background-position:top center;
   background-size: cover;
@@ -125,7 +153,7 @@ Main Components
   top: 17vh;
 }
 .projects-container .cd-single-project:nth-of-type(2)::after {
-  background-image: url("../img/img-2-large.jpg");
+  background-image: url("");
   background-position:top left;
 }
 .projects-container .cd-single-project:nth-of-type(2)::before {
@@ -135,7 +163,7 @@ Main Components
   top: 34vh;
 }
 .projects-container .cd-single-project:nth-of-type(3)::after {
-  background-image: url("../img/img-3-large.jpg");
+  background-image: url("");
 	  background-position:top center;
 }
 .projects-container .cd-single-project:nth-of-type(3)::before {
@@ -145,7 +173,7 @@ Main Components
   top: 51vh;
 }
 .projects-container .cd-single-project:nth-of-type(4)::after {
-  background-image: url("../img/img-4-large.jpg");
+  background-image: url("");
 	  background-position:top right;
 }
 .projects-container .cd-single-project:nth-of-type(4)::before {
@@ -155,7 +183,7 @@ Main Components
   top: 68vh;
 }
 .projects-container .cd-single-project:nth-of-type(5)::after {
-  background-image: url("../img/img-5-large.jpg");
+  background-image: url("");
 	  background-position:top right;
 }
 .projects-container .cd-single-project:nth-of-type(5)::before {
@@ -174,7 +202,7 @@ Main Components
   top: 0;
   height: auto;
   z-index: 1;
-  cursor: auto;
+  cursor: pointer;
   -webkit-transition: z-index 0s 0s, top 0.4s 0s;
   -moz-transition: z-index 0s 0s, top 0.4s 0s;
   transition: z-index 0s 0s, top 0.4s 0s;
@@ -194,32 +222,32 @@ Main Components
   }
 	
 	.projects-container .cd-single-project:first-of-type {
-    background-image: url("../img/img-1-large.jpg");
+    background-image: url("");
 	background-repeat: no-repeat;
   	background-position:center center;
   	background-size: cover; 
   
   }
 	.projects-container .cd-single-project:nth-of-type(2) {
-    background-image: url("../img/img-2-large.jpg");
+    background-image: url("");
 	background-repeat: no-repeat;
   	background-position:center center;
   	background-size: cover; 
   }
 	.projects-container .cd-single-project:nth-of-type(3) {
-    background-image: url("../img/img-3-large.jpg");
+    background-image: url("");
 	background-repeat: no-repeat;
   	background-position:center center;
   	background-size: cover; 
   }
 	.projects-container .cd-single-project:nth-of-type(4) {
-    background-image: url("../img/img-4-large.jpg");
+    background-image: url("");
 	background-repeat: no-repeat;
   	background-position:center center;
   	background-size: cover; 
   }
 	.projects-container .cd-single-project:nth-of-type(5) {
-    background-image: url("../img/img-5-large.jpg");
+    background-image: url("");
 		background-repeat: no-repeat;
   	background-position:right center;
   	background-size: cover; 

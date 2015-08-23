@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-	$(".cd-singl-project").click(function(){
+	$(".cd-single-project").click(function(){
 		$("#bottom").animate({height:"0vh"},500);
 	});
 	$(".description").hide();
@@ -77,6 +77,29 @@ jQuery(document).ready(function($){
 			}, 150);
 		}
 	}
+	var id;
+	var show;
+	var location;
+	var locationid;
+	$(".list").click(function(){
+		id=$(this).data("category-name");
+		$(".list").fadeOut();
+		show="a[data-category="+id+"]";
+		$(show).fadeIn("slow");
+		$("#back").show();
+		if(id=="CLASSICALARTS") locationid="CLASSICAL ARTS";
+		if(id=="DESIGNANDMEDIA") locationid="DESIGN AND MEDIA";
+		if(id=="WORDGAMES") locationid="WORD GAMES";
+		else location=id;
+		location="EVENTS > "+locationid;
+		$("#location").html(location);
+	});
+	$("#back").click(function(){
+		$(show).fadeOut();
+		$(".list").fadeIn("slow");
+		$(this).hide();
+		$("#location").html("EVENTS");
+	});
 });
  (function($){
  	$.fn.bgLoaded = function(custom) {
