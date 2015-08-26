@@ -1,14 +1,14 @@
-/* -------------------------------- 
-
-Primary style
-
--------------------------------- */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+.items{
+	text-align: center;
+	padding: 5vh 5vw;
+	width: 25vw;
+	float: left;
+}
 html {
   font-size: 62.5%;
 }
@@ -16,16 +16,37 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "PT Sans", sans-serif;
-  color: #ffffff;
   background-color: #0b0c26;
 	margin: 0px auto;
 }
-
+#container
+{
+	display: none;
+}
+#overlay
+{
+	position: fixed;
+	z-index: 9999;
+	margin-top: 85vh;
+	height: 15vh;
+	width: 100vw;
+	background-color: aliceblue;
+}
 a {
   color: #9e1c51;
   text-decoration: none;
 }
-
+#popup
+{
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.6);
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	display: none;
+	z-index: 1000;
+}
 .h2
 {
 	background-color: #eb0d0d;
@@ -42,29 +63,20 @@ a {
 	font-family: 'Raleway',sans-serif;
 	color: white;
 }
-/* -------------------------------- 
-
-Main Components 
--------------------------------- */
-#bottom{
-	height: 15vh;
-	width: 100vw;
-	position: relative;
-	top: 0px;
-}
-
 .projects-container {
-  height: 85vh;
+	
+	bottom: 0;
+  height: 100%;
   width: 100vw;
-  position: relative;
+  position: absolute;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
+
 .events-ul
 {
 	height: 50vh;
 	width: 80vw;
-	
 }
 .events-li
 {
@@ -86,16 +98,18 @@ Main Components
 {
 	float: left;
 	width: 20vw;
-	height: 120vh;	
+	height: 100vh;
 	text-align: center;
 }
 #contactus > div > span
 {
-	top: 5vh;
+	height: 20vh;
+	top: 20px;
 }
 #contactus > div > span > img
 {
-	height: 15vh;
+	height: 14vh;
+	width: auto;
 	border-radius: 50%;
 	background-position: center;
 	
@@ -103,6 +117,16 @@ Main Components
 #contactus > div > span > p
 {
 	line-height: normal;
+}
+#overlay > #artssociety
+{
+	
+}
+#login
+{
+	//display: table-cell;
+	//vertical-align: middle;
+	top: 10px;
 }
 .projects-container::before {
   /* never visible - this is used in jQuery to check the current MQ */
@@ -113,7 +137,6 @@ Main Components
   position: absolute;
   top: 0;
   left: 0;
-  
   width: 100%;
   height: 20%;
   overflow: hidden;
@@ -136,25 +159,19 @@ Main Components
   left: 0;
   height: 20vh;
   width: 100%;
-  background-image: url("");
+  background-image: url("../img/img-1-large.jpg");
   background-repeat: no-repeat;
-  background-position:top center;
+  background-position:center center;
   background-size: cover;
   -webkit-transition: opacity 0.5s, height 0.4s;
   -moz-transition: opacity 0.5s, height 0.4s;
   transition: opacity 0.5s, height 0.4s;
 }
-.projects-container .cd-single-project::before {
-  /* never visible - this is used in jQuery to detect if the background image has been loaded  */
-  content: 'img/img-1-large.jpg';
-  display: none;
-}
 .projects-container .cd-single-project:nth-of-type(2) {
   top: 17vh;
 }
 .projects-container .cd-single-project:nth-of-type(2)::after {
-  background-image: url("");
-  background-position:top left;
+  background-image: url("../img/img-2-large.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(2)::before {
   content: 'img/img-2-large.jpg';
@@ -163,8 +180,7 @@ Main Components
   top: 34vh;
 }
 .projects-container .cd-single-project:nth-of-type(3)::after {
-  background-image: url("");
-	  background-position:top center;
+  background-image: url("../img/img-3-large.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(3)::before {
   content: 'img/img-3-large.jpg';
@@ -173,8 +189,7 @@ Main Components
   top: 51vh;
 }
 .projects-container .cd-single-project:nth-of-type(4)::after {
-  background-image: url("");
-	  background-position:top right;
+  background-image: url("../img/img-4-large.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(4)::before {
   content: 'img/img-4-large.jpg';
@@ -183,8 +198,7 @@ Main Components
   top: 68vh;
 }
 .projects-container .cd-single-project:nth-of-type(5)::after {
-  background-image: url("");
-	  background-position:top right;
+  background-image: url("../img/img-5-large.jpg");
 }
 .projects-container .cd-single-project:nth-of-type(5)::before {
   content: 'img/img-5-large.jpg';
@@ -219,38 +233,29 @@ Main Components
     width: 20vw;
     height: 100%;
     opacity: 0;
+	  -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: width 0s;
+    -moz-transition: width 0s;
+    transition: width 0s;
   }
-	
 	.projects-container .cd-single-project:first-of-type {
-    background-image: url("");
-	background-repeat: no-repeat;
-  	background-position:center center;
-  	background-size: cover; 
-  
+    background-image: url("../img/img-1-large.jpg");
   }
 	.projects-container .cd-single-project:nth-of-type(2) {
-    background-image: url("");
-	background-repeat: no-repeat;
-  	background-position:center center;
-  	background-size: cover; 
+    background-image: url("../img/img-2-large.jpg");
   }
 	.projects-container .cd-single-project:nth-of-type(3) {
-    background-image: url("");
-	background-repeat: no-repeat;
-  	background-position:center center;
-  	background-size: cover; 
+    background-image: url("../img/img-3-large.jpg");
   }
 	.projects-container .cd-single-project:nth-of-type(4) {
-    background-image: url("");
-	background-repeat: no-repeat;
-  	background-position:center center;
-  	background-size: cover; 
+    background-image: url("../img/img-4-large.jpg");
   }
 	.projects-container .cd-single-project:nth-of-type(5) {
-    background-image: url("");
-		background-repeat: no-repeat;
-  	background-position:right center;
-  	background-size: cover; 
+    background-image: url("../img/img-5-large.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(2) {
     top: 0;
@@ -274,7 +279,6 @@ Main Components
     opacity: 0;
   }
   .projects-container .cd-single-project.is-loaded {
-    /* show items when background images have been loaded */
     opacity: 1;
   }
   .projects-container .cd-single-project.is-loaded::after {
@@ -288,26 +292,47 @@ Main Components
     -moz-transition: width 0.4s 0s, z-index 0s 0s, left 0.4s 0s;
     transition: width 0.4s 0s, z-index 0s 0s, left 0.4s 0s;
   }
-}
-@media only screen and (min-width: 1170px) {
-  .projects-container .cd-single-project::after {
+	.projects-container .cd-single-project::after {
     background-attachment: fixed;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: -webkit-transform 0.8s, opacity 0.5s;
-    -moz-transition: -moz-transform 0.8s, opacity 0.5s;
-    transition: transform 0.8s, opacity 0.5s;
-  }
-  .no-touch .projects-container .cd-single-project:hover::after, .projects-container .cd-single-project.is-full-width.is-loaded::after {
-    opacity: 1;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
+    -webkit-transition: -webkit-transform 0.8s, opacity 0.5s;
+    -moz-transition: -moz-transform 0.8s, opacity 0.5s;
+    transition: transform 0.8s, opacity 0.5s;
+  }
+	
+  .no-touch .projects-container .cd-single-project:hover::after, .projects-container .cd-single-project.is-full-width.is-loaded::after {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .projects-container .cd-single-project::after {
+    background-attachment: fixed;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.8s, opacity 0.5s;
+    -moz-transition: -moz-transform 0.8s, opacity 0.5s;
+    transition: transform 0.8s, opacity 0.5s;
+  }
+	
+  .no-touch .projects-container .cd-single-project:hover::after, .projects-container .cd-single-project.is-full-width.is-loaded::after {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
 
@@ -548,4 +573,56 @@ Main Components
     -o-transform: translateX(-50%) scale(1);
     transform: translateX(-50%) scale(1);
   }
+}
+
+
+body {
+	background-color: rgb(30,30,30);
+}
+
+svg {
+	margin: auto;
+	position: absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;	
+}
+#flamingon
+{
+	text-align: center;
+	height: auto;
+	width: 100%;
+	margin-top: 80vh;
+	
+}
+#flamingon > span
+{
+	font-size: 20px;
+	font-family: 'Marvel','sans-serif';
+	color: orange;
+	animation:blink 0.7s;
+	animation-iteration-count: infinite;
+	opacity: 0;
+}
+@keyframes blink
+{
+	to{opacity: 1;};
+}
+.path {
+	stroke-dashoffset:1940;
+	stroke-dasharray:1940;
+	animation: draw 3s infinite;
+	fill-opacity: 0;
+}
+
+@keyframes draw {
+	30%{fill-opacity: 1;}
+	31%{fill-opacity: 1;}
+	32%{fill-opacity: 1;}
+	33%{fill-opacity: 1;}
+	34%{fill-opacity: 1;}
+	35%{fill-opacity: 1;}
+	50%{stroke-dashoffset:0;}
+	90%{stroke-dashoffset:0; fill-opacity: 1;}
 }
