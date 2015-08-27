@@ -10,9 +10,9 @@
 	float: left;
 }
 html {
-  font-size: 62.5%;
-}
-
+  font-size: 62.5%;  }
+a{
+	  }
 body {
   font-size: 1.6rem;
   font-family: "PT Sans", sans-serif;
@@ -30,9 +30,10 @@ body {
 	margin-top: 85vh;
 	height: 15vh;
 	width: 100vw;
-	background-color: aliceblue;
+	background-color: rgb(0,0,0);
 }
 a {
+	text-decoration: none;
   color: #9e1c51;
   text-decoration: none;
 }
@@ -72,7 +73,6 @@ a {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
-
 .events-ul
 {
 	height: 50vh;
@@ -96,7 +96,7 @@ a {
 }
 #contactus > div
 {
-	float: left;
+	//float: left;
 	width: 20vw;
 	height: 100vh;
 	text-align: center;
@@ -104,11 +104,11 @@ a {
 #contactus > div > span
 {
 	height: 20vh;
-	top: 20px;
+	//margin-top: 20px;
 }
 #contactus > div > span > img
 {
-	height: 14vh;
+	height: 13vh;
 	width: auto;
 	border-radius: 50%;
 	background-position: center;
@@ -117,6 +117,7 @@ a {
 #contactus > div > span > p
 {
 	line-height: normal;
+	color: aliceblue;
 }
 #overlay > #artssociety
 {
@@ -129,7 +130,6 @@ a {
 	top: 10px;
 }
 .projects-container::before {
-  /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
   display: none;
 }
@@ -144,15 +144,18 @@ a {
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
-  /* on mobile -  move items outside the viewport */
   -webkit-transform: translateX(-100%);
   -moz-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   -o-transform: translateX(-100%);
   transform: translateX(-100%);
+	 -webkit-filter:  grayscale(100%);
+ -moz-filter:  grayscale(100%);
+ -ms-filter:  grayscale(100%);
+ -o-filter:  grayscale(100%);
+ filter:  grayscale(100%);
 }
 .projects-container .cd-single-project::after {
-  /* background image */
   content: '';
   position: absolute;
   top: 0;
@@ -229,6 +232,13 @@ a {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
   }
+	#contactus > div
+{
+	float: left;
+	width: 20vw;
+	height: 100vh;
+	text-align: center;
+}
   .projects-container .cd-single-project {
     width: 20vw;
     height: 100%;
@@ -241,21 +251,6 @@ a {
     -webkit-transition: width 0s;
     -moz-transition: width 0s;
     transition: width 0s;
-  }
-	.projects-container .cd-single-project:first-of-type {
-    background-image: url("../img/img-1-large.jpg");
-  }
-	.projects-container .cd-single-project:nth-of-type(2) {
-    background-image: url("../img/img-2-large.jpg");
-  }
-	.projects-container .cd-single-project:nth-of-type(3) {
-    background-image: url("../img/img-3-large.jpg");
-  }
-	.projects-container .cd-single-project:nth-of-type(4) {
-    background-image: url("../img/img-4-large.jpg");
-  }
-	.projects-container .cd-single-project:nth-of-type(5) {
-    background-image: url("../img/img-5-large.jpg");
   }
   .projects-container .cd-single-project:nth-of-type(2) {
     top: 0;
@@ -325,7 +320,13 @@ a {
     -moz-transition: -moz-transform 0.8s, opacity 0.5s;
     transition: transform 0.8s, opacity 0.5s;
   }
-	
+	#contactus > div
+{
+	float: left;
+	width: 20vw;
+	height: 100vh;
+	text-align: center;
+}
   .no-touch .projects-container .cd-single-project:hover::after, .projects-container .cd-single-project.is-full-width.is-loaded::after {
     opacity: 1;
     -webkit-transform: scale(1.1);
@@ -413,7 +414,7 @@ a {
   margin-top: 100vh;
   padding: 4em 0;
   cursor: auto;
-  background-color: #ffffff;
+  background-color: #1c1b1b;
   color: #3f538e;
   -webkit-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   -moz-transition: opacity 0.4s 0s, visibility 0s 0.4s;
@@ -590,11 +591,11 @@ svg {
 }
 #flamingon
 {
+	position: relative;
 	text-align: center;
 	height: auto;
 	width: 100%;
 	margin-top: 80vh;
-	
 }
 #flamingon > span
 {
@@ -625,4 +626,30 @@ svg {
 	35%{fill-opacity: 1;}
 	50%{stroke-dashoffset:0;}
 	90%{stroke-dashoffset:0; fill-opacity: 1;}
+}
+.path1 {
+	stroke-dashoffset:1600;
+	stroke-dasharray:1600;
+	-webkit-animation: draw1 8s linear infinite;
+  -moz-animation: draw1 8s linear infinite;
+  animation: draw1 8s linear infinite;
+	fill-opacity: 0;
+}
+
+@-webkit-keyframes draw1 {
+	30%{stroke-dashoffset:0; fill-opacity: 0;}
+	50%{fill-opacity:1;}	
+	100%{stroke-dashoffset:0; fill-opacity:1;}	
+}
+
+@-moz-keyframes draw1 {
+	30%{stroke-dashoffset:0; fill-opacity: 0;}
+	50%{fill-opacity:1;}	
+	100%{stroke-dashoffset:0; fill-opacity:1;}	
+}
+
+@keyframes draw1 {
+	30%{stroke-dashoffset:0; fill-opacity: 0;}
+	50%{fill-opacity:1;}	
+	100%{stroke-dashoffset:0; fill-opacity:1;}	
 }

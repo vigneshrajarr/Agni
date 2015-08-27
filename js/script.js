@@ -1,5 +1,10 @@
-$("#preloader").show();
 
+var math=Math.round(Math.random())+1;
+if(math==1)
+	$("#flamingon").css("margin-top","90vh");
+var math="#"+math+"";
+$(math).show();
+$("#preloader").show();
 $(document).ready(function(){
 	setTimeout(function(){
 		$("#preloader").fadeOut();
@@ -7,12 +12,8 @@ $(document).ready(function(){
 	$("#overlay").show();
 	$("#preloader").hide();
 	$(".description").hide();
-    $(".vertical_div").mouseover(function(){
-		$(this).css("-webkit-filter","grayscale(0%)");
-		$(this).css("filter","grayscale(0%)");
-		$(".vertical_div").css("-webkit-filter","grayscale(0%)");
-		$(this).children().next().children().children().next().slideDown("fast");
-		//$(this).children().css("background-color","rgba(0,0,0,0.4)");
+    $(".cd-single-project").mouseover(function(){
+		$(".cd-single-project").css("-webkit-filter","grayscale(0%)");
 	});
 	//form
 	$("#elementname").hide();
@@ -63,13 +64,7 @@ $(document).ready(function(){
 			$("#popup").fadeOut();
 		}
 	});
-	$(".event").click(function(){
-		$("#popup").fadeIn();
-//		$("#popup").css({"z-index":"99"});
-	});
-	$("#eventsclose").click(function(){
-		$("#popup").fadeOut();
-	});
+	
 	$("#loginbutton").click(function(){
 		if($("#username").val()=="" || $("#password").val()=="")
 			return false;
@@ -121,7 +116,7 @@ $(document).ready(function(){
 			}
 	});
 	});
-	},4000);
+	},4500);
 	
 	
 });
