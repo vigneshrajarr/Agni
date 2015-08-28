@@ -96,6 +96,13 @@ $(document).ready(function(){
 			alert("Passwords didn't match.");
 			return false;
 		}
+		if(regex.test(password) || regex.test(cpassword))
+		{
+		}else
+		{
+			alert("Password must contain 8 characters,minimum 1 alphabet 1 number and 1 special character");
+			return false;
+		}
 		if($("#phonenumber").val().length<10 || $("#phonenumber").val().length<10)
 		{
 			alert("Invalid phone number.");
