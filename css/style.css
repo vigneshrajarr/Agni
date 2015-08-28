@@ -102,7 +102,8 @@ a {
 {
 	width: 80vw;
 	height: 100vh;
-	margin: 0px auto 0px auto;
+	margin: 0px auto;
+	margin-top: -10px;
 }
 #contactus > div
 {
@@ -118,7 +119,7 @@ a {
 }
 #contactus > div > span > img
 {
-	height: 13vh;
+	height: 10vh;
 	width: auto;
 	border-radius: 50%;
 	background-position: center;
