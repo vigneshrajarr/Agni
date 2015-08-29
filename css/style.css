@@ -6,7 +6,7 @@
 .items{
 	text-align: center;
 	padding: 5vh 5vw;
-	width: 25vw;
+	width: 33.3vw;
 	float: left;
 }
 html {
@@ -20,6 +20,21 @@ body {
 #container
 {
 	display: none;
+}
+.portfolio-item
+{
+	-webkit-filter: grayscale(60%);
+	-moz-filter: grayscale(60%);
+	-o-filter: grayscale(60%);
+	filter: grayscale(60%);
+}
+.portfolio-item:hover
+{
+	cursor: pointer;
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	-o-filter: grayscale(0%);
+	filter: grayscale(0%);
 }
 #overlay
 {
@@ -127,12 +142,13 @@ a {
 }
 #contactus > div > span > p
 {
+	font-size: 15px !important;
 	line-height: normal;
 	color: aliceblue;
 }
-#overlay > #artssociety
+figcaption > p
 {
-	
+	font-size: 17px !important;
 }
 #login
 {
@@ -427,7 +443,7 @@ a {
   padding: 4em 0;
   cursor: auto;
   background-color: #1c1b1b;
-  color: #3f538e;
+  color: #d8d855;
   -webkit-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   -moz-transition: opacity 0.4s 0s, visibility 0s 0.4s;
   transition: opacity 0.4s 0s, visibility 0s 0.4s;

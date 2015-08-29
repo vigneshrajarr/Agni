@@ -93,21 +93,26 @@ jQuery(document).ready(function($){
 		$("#back").fadeOut();
 		$(this).html("EVENTS");
 	});
+	var popup=1;
 	$(document).keydown(function(e){
-        if(e.keyCode==27 && $("#list").css)
-        {
-            $(".list").fadeIn();
-			$(show).fadeOut();
-			$("#back").fadeOut();
-			$("#location").html("EVENTS");
-        }
-    });
-	var map=new Object();
-		map["Agni"]=["ASD"];
-		map["Adzap"]=["Bring"];
-	$("#event").click(function(){
-		
-		alert(map["Agni"]);
+		if(e.keyCode==27)
+		{
+			if(popup==1)
+			{
+            	$("#popup").fadeOut();
+				popup=0;
+				console.log(popup);
+			}
+			else
+			{
+				$(".list").fadeIn();
+				$(show).fadeOut();
+				$("#back").fadeOut();
+				$("#location").html("EVENTS");
+				popup=1;
+				console.log(popup);
+			}
+		}
 	});
 });
  (function($){
@@ -159,14 +164,14 @@ jQuery(document).ready(function($){
 "",
 "India is a country, rich in history. Come aboard to test your patriotism toward ours Mother Nation at Agni's India quiz and show your also to gain unknown knowledge about her. Bharat matha ki jai!",
 "Just-A-Minute invites the student speaker to talk on a given topic for sixty seconds without hesitation, repetition, or deviation. This is JAM and not an exam. So join 'Agni's JAM' without hesitation and make a mark out there !",
-"kavidhai enbadhu manadhin moochu.. Unn manam nenaipadhai ootraga veliye kondu varum vaayil dhan kavidhai… varungal kavinjargale…. Ungalin sindhanaigalai parimaarungal.",
+"Kavidhai enbadhu manadhin moochu.. Unn manam nenaipadhai ootraga veliye kondu varum vaayil dhan kavidhai… varungal kavinjargale…. Ungalin sindhanaigalai parimaarungal.",
 "Boologam release aguma?? Viswaroopam 2 la enna twist?? Y katappa killed Bahubali?? Know the answer to such questions….. Kolly quiz invites you to test your mettle…",
 "Want to get to know the college well? Want to roam around the college with your friends? Do it with a purpose! Agni welcomes you to join material hunt. Search the college with your friends, find maximum number of materials to won exciting prizes! Happy hunting",
 "Calling all ladies… Do you have what it takes to make your palm into a masterpiece?? Well, then this is the place to be. Mahendi Art. ",
 "unleash all the hidden talents to portray different characters. R u the one who is a hit amongst friends since you can imitate different characters ? then here is a stage waiting for you ! come on and impress the crowd with your multi talented soul ! ",
 "Good at designing dresses? Here is one step to improve your skills. Take part in Agni's newspaper dressing to make your dream dresses cheap and best! Good luck dressmakers!",
 "Photohraphy has become a fad these days. A good snapshot keeps a moment from running away. Capture them and we are here to give it what it deserves! Good luck to all those shutterbugs out there!",
-"have a craze for photography…. Come on guys and let the shutters keep clicking.",
+"Have a craze for photography…. Come on guys and let the shutters keep clicking.",
 "Holi is here for the floors. Decorate them with your impressive skills of creativity at modern art contest in agni. Have a happy, colorful and joyous rangoli holi!",
 "Here is some work for your vocabulary skills. Take part in agni's Scrabble. Don’t babble and gabble, just scrabble your mind and bring out the words! Let the game of words begin!",
 "Sherlock Holmes is the legendary great detective who solves even the most baffling cases. Bring out the detective in you by participating in Agni's sherlock to bring out the detective in you! Don’t overlook even the slightest component guys!",
@@ -175,7 +180,7 @@ jQuery(document).ready(function($){
 "Dancing is like dreaming with your feet. Don’t look at your feet to see if you are doing it right.  Just dance solemnly. Agni takes pride to invide all those enthusiasts to participate in solo dancing! Dance away!",
 "In the game of sports, the line of victory and defeat is quite clear. It's time to get your game on, so come out and have fun. Reflect your knowledge on sports in Agni's sports quiz to win exciting prizes.",
 "Do you have a knack for maths? Agni presents you with the puzzle, Sudoku! Play and win the game with numbers within a square and you wont go unaware.",
-"vaadhangal valimaiyanavai. Medaiyum naduvarum koodi irundhal ! Arangam ondru kathirukindradhu",
+"Vaadhangal valimaiyanavai. Medaiyum naduvarum koodi irundhal ! Arangam ondru kathirukindradhu",
 "Precious treasures await you in the deep dark places across the campus. Explore the college by participating in Agni's treasure hunting. Find maximum treasures and win exciting prizes!",
 "People who have a variety of talents to display, never mind in showcasing it here! Agni gives a warm welcome to all those happy, joyful, energetic minds to come aboard on 'variety show'. May the force be with you!",
 "Carve vegetables to form beautiful objects. The products of vegetable carving are generally flowers or birds; however, the only limit is one’s imagination. Marvel and flaunt the art of vegetable carving !",

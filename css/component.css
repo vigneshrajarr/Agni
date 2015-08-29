@@ -59,7 +59,7 @@
 
 .grid figcaption p {
 	padding: 0 20px;
-	color: #f75959;
+	color: #565656;
 	font-weight: 300;
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
@@ -100,7 +100,7 @@
 }
 
 .grid svg path {
-	fill: #efbaba;
+	fill: #e3d675;
 }
 
 /* Hover effects */

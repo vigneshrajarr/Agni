@@ -58,12 +58,7 @@ $(document).ready(function(){
 			opacity:"1",
 		},200);
 	});
-	$(document).keydown(function(e){
-		if(e.keyCode==27)
-		{
-			$("#popup").fadeOut();
-		}
-	});
+	
 	
 	$("#loginbutton").click(function(){
 		if($("#username").val()=="" || $("#password").val()=="")
@@ -123,7 +118,7 @@ $(document).ready(function(){
 			}
 	});
 	});
-	},00);
+	},4500);
 	
 	
 });
