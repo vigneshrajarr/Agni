@@ -693,3 +693,10 @@ svg {
 	width: 50%;
 	height: 50%;
 }
+.items > p
+{
+	font-family: 'Marvel' sans-serif;
+	font-size: 15px;
+	color: aliceblue;
+	vertical-align: middle;
+}
