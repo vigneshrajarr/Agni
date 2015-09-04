@@ -123,6 +123,10 @@ jQuery(document).ready(function($){
 		}
 	});
 	var event=["AGNI DUDE AND AGNI DUDETTE","AGNI REPORTER","BANDS","BOX FOOTBALL","CEG KU PUTHUSU","CONNECTIONS","CROSSIE","DOODLES","DUAL DANCE","DUBSMASH","EGG SHELL PAINTING","ENGLISH DEBATE","FACE PAINTING","FICTION WRITING","FIRELESS COOKING","GAMINDROME","GROUP DANCE","GROUPIE","GULLY CRICKET","INDIA QUIZ","JAM","KAVITHAI ","KOLLY QUIZ","MATERIAL HUNT","MEHANDHI","MONOACTING","NEWSPAPER DRESSING","ONLINE PHOTOGRAPHY","PHOTO HUNT","RANGOLI","SCRABBLE","SHERLOCK","SHORT FILM","SITHIRAM PESUTHADI","SOLO DANCE","SPORTS","SUDOKU","TAMIL DEBATE","TREASURE HUNT","MOVIE SPOOF","VEG CARVING","VOCALS(OPEN GENRE)"];
+    for(var i  = 0;i < event.length; i++)
+    {
+        console.log(i+". "+event[i]+"\n");
+    }
 	 var description=[
 	 "Witness here how beauty coincides with talent and creates a lovely spirit and sparkle! Participate and gain the chances of being crowned as the star of the night! Good luck to all ladies and gentlemen out there!",
 "News everywhere. Collect, report and distribute news and the let the world know the journalist in you. Join as Agni reporter and gain a real time experience of being a journalist! Happy reporting!",
@@ -165,47 +169,47 @@ jQuery(document).ready(function($){
 "Carve vegetables to form beautiful objects. The products of vegetable carving are generally flowers or birds; however, the only limit is one’s imagination. Marvel and flaunt the art of vegetable carving !",
 "With the seven swaras taking us beyond the  seven wonders, grace our event and embrace our souls. So come on and raise your voicespeak your mind and make some noise at agni's 'Vocals' to bring out the best voices in you!"];
 	var rules=["<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul><li>Each band will have 10 mins on stage including set up</li><li>A basic drumkit will be provided </li><li>All other  instruments should be brought by the participants</li><ul>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br><ul><li>Each team can have atmost 2 people.</li><li>The time limit is 1 hour.</li><li>The theme will be announced on the spot.</li><li>The participants will be judged purely based on their creativite ideas.</li></ul>",
-			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul>Track length : 5-5:30<li>Only boy-boy, girl-girl combination, no mixed combo allowed-</li><li>Any language songs allowed</li><li>Dangerous props not allowed</li><li>Any language songs, no dangerous props</li><li>no marketing/promotional costumes to be worn</li><li>track will be cut if it exceeds time limit</li><li>No preference for any particular style of dance</li></ul>",
 			   "<strong>Rules :</strong><br><ul><li>Open theme.</li><li>Prizes will be based on the number of Facebook likes.</li><li>Entries with vulgar content will be disqualified.</li><li>Judges' decision will be final.</li><li>Post your entries with #asceg</li></ul>",
-			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul><li>Each team should consist of only one people.</li><li>The theme will be announced on the spot</li><li>The time limit is 1:30 hour</li><li>Participants will be judged on the basis of creativity, innovation and design.</li><li>Decision of the judges will be final and binding</li><li>Materials will be provided</li></ul>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :<br></strong><br><ul><li>Each team should consist of 2 people</li><li>The theme will be announced on the spot</li><li>Participants will be judged on the basis of creativity, innovation and design.</li><li>Decision of the judges will be final and binding</li></ul>",
 			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul><li>1. Each team should consist of 2 people</li><li>2. The theme will be announced on the spot</li><li>3. The time limit is 1 hour </li><li>4. Participants will be judged on the basis of creativity, innovation and design.  </li><li>5. Decision of the judges will be final and binding</li><li>6. Materials will be provided</li></ul>",
 			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br><ul><li>Minimum of 5 people must be visible in the selfies.</li><li>Photo must be taken inside the campus.</li><li>Prizes will be based on Facebook likes.</li><li>Post your entries witn the #asceg tag.</li><li>Judges' decision will be final.</li></ul>",
-			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul><li>Track length : 5 - 6 minutes</li><li>Team limit : 25 people, on stage - 15</li><li>Any language songs, no dangerous props</li><li>no marketing/promotional costumes to be worn</li><li>track will be cut if it exceeds time limit</li><li>No preference for any particular style of dance</li></ul>",
+			   "<strong>Rules :</stdrong><br><ul><li>Minimum of 5 people must be visible in the selfies.</li><li>Photo must be taken inside the campus.</li><li>Prizes will be based on Facebook likes.</li><li>Post your entries witn the #asceg tag.</li><li>Judges' decision will be final.</li></ul>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul><li>Each team consists of 2 members. One person does the Mehandi design on the other person's hand.</li><li>The time duration is 1 hour</li><li>The Mehandi cones will be provided .</li><li>The Decisions of the judges will be impending and final.</li></ul>",
 			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul><li>Each team should consist of 2-3 people</li><li>The theme will be announced on the spot</li><li>The time limit is 1:30 hour </li><li>Participants will be judged on the basis of creativity, innovation and design.</li><li>Decision of the judges will be final and binding</li><li>Materials will be provided</li></ul>",
 			   "<strong>Rules :</strong><br><ul><li>One photo per participant.</li><li>If the entry is found to be copyrighted image or image downloaded from internet ,the participant will be disqualified.</li><li>Image should be in  JPEG format.</li><li>Mail your entries to agniphotography15@gmail.com.</li><li>Prizes will be based on fb likes and the team's judgement.</li><li>Open theme.</li><li>Photo manipulation is not allowed... However minor colour correction is allowed</li></ul>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br><ul><li>Each team can Have maximum of 3-4 people.</li><li>The theme will be announced on the spot.</li><li>The time limit is 1 hour.</li><li>Participants will be judged on the basis of creativity, innovation and design.</li><li>Decision of the judges will be final and binding.</li></ul>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul> <li>No vulgarity(words , action)</li><li>No defamation (oraganization, individuals)</li><li>Duration : 10 -15 mins .</li><li>Formats : .mov , .avi , .mp4</li><li>Deadline: 8th September. </li>Subtitles complusory. <strong>Submission</strong>,<li>Send your links<li><br><strong>Mail:</strong>  <ul><li>vgnshkmr22@gmail.com<li><li>raagulram.g@gmail.com .</li> <li>Send your Cd's with cd sticker to Arts Society office, Anna University.</li></ul></ul>",
+			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul><li>Track length : 4 minutes to 4:30</li><li>Any language songs allowed,</li><li>Dangerous props such as fire and sprays not allowed</li><li>Any language songs, no dangerous props</li><li>no marketing/promotional costumes to be worn</li><li>track will be cut if it exceeds time limit</li><li>No preference for any particular style of dance</li></ul>",
+			   "<strong>Rules :</strong><br><ul><li>There will be two rounds. </li><li>Prelims- Will be a written round with 25 questions. </li><li>Finals- Top teams from prelims will be selected to finals which consists of multiple rounds.</li> <li>Teams of 2 or 3. </li></ul>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul>->Treasure Hunt clues will be placed around 3 campus CEG,ACT,SAP.<li>->There should be at least 2 members per team, with 3 being maximum members allowed.</li><li>->Damaging the clues is strictly prohibited. If we come to know that any team is responsible for the damage they will be out of the game without any queries.</li><li>->Registration will be onspot.</li><li>->Judges' decision will be final.</li></ul>",
+			   "<strong>Rules :</strong><br><ul><li>#Time limit- 8 to 10mins</li><li>#Team size limit- 12 to 15 members</li><li>#Plagiarism not allowed</li><li>#Vulgarity at any stage of performance will lead to disqualification</li><li>#concept and performance must strictly adhere to the event i.e., only spoof is allowed</li><li>#Judges decision is final</li><strong>FAQ:</strong><ul><li>#Should i register online ??<br>Yes, prior registration will help u in getting slot.. only prefered number of teams are allowed!!</li><li># How can I register??<br>Mail us cegspartanz@gmail.com</li><li>#What are the details I should give?<br><li>All your team members name with roll number, year, dept and contact number</li><li>#Should we perform with Audio track?<br>Not necessarily..but it helps u a lot.. u can also enact with ur own dialogues.. u can lively speak over the mike on stage also</li><li>#When should I submit the audio track??<br>Mail us the audio track on or before Sept 9 and also do bring it in a pendrive to the event !!</li></ul></ul>",
+			   "<strong>Rules :</strong><br><ul><li>1. Each team should consist of 2 people</li><li>2. The theme will be announced on the spot</li><li>3. The time limit is 1 hour </li><li>4. Participants will be judged on the basis of creativity, innovation and design.</li><li>5. Decision of the judges will be final and binding</li><li>6. Materials will be provided</li></ul>",
+			   "<strong>Rules :</strong><br><ul><li>Solo singing 3 mins per person for prelims</li><li>5 ppl gets selected  to the finals</li></li>5 mins per person for finals</li>",
 			  ];
 	var contact=[
 		"",
@@ -240,16 +244,24 @@ jQuery(document).ready(function($){
 		"",
 		"",
 		"",
+		"Raagul Ram : 9710716120<br>Lavanya : 8056163862",
 		"",
 		"",
+		"Raja : 9629314522",
 		"",
 		"",
+		"Ganapathy phn no: 9487140854",
 		"",
 		"",
-		"",
-		"",
-		""
+        ""
+        
 	];
+    for(var i = 0;i<contact.length;i++)
+    {
+        console.log(i+" "+contact[i]+"\n");
+    }
+    
+    
 	 $(".event").click(function(){
 		 var title=$(this).children().children().next().next().children().html();
 		 $(".signin").html(title);
