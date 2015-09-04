@@ -123,10 +123,10 @@ jQuery(document).ready(function($){
 		}
 	});
 	var event=["AGNI DUDE AND AGNI DUDETTE","AGNI REPORTER","BANDS","BOX FOOTBALL","CEG KU PUTHUSU","CONNECTIONS","CROSSIE","DOODLES","DUAL DANCE","DUBSMASH","EGG SHELL PAINTING","ENGLISH DEBATE","FACE PAINTING","FICTION WRITING","FIRELESS COOKING","GAMINDROME","GROUP DANCE","GROUPIE","GULLY CRICKET","INDIA QUIZ","JAM","KAVITHAI ","KOLLY QUIZ","MATERIAL HUNT","MEHANDHI","MONOACTING","NEWSPAPER DRESSING","ONLINE PHOTOGRAPHY","PHOTO HUNT","RANGOLI","SCRABBLE","SHERLOCK","SHORT FILM","SITHIRAM PESUTHADI","SOLO DANCE","SPORTS","SUDOKU","TAMIL DEBATE","TREASURE HUNT","MOVIE SPOOF","VEG CARVING","VOCALS(OPEN GENRE)"];
-    for(var i  = 0;i < event.length; i++)
+    /*for(var i  = 0;i < event.length; i++)
     {
         console.log(i+". "+event[i]+"\n");
-    }
+    }*/
 	 var description=[
 	 "Witness here how beauty coincides with talent and creates a lovely spirit and sparkle! Participate and gain the chances of being crowned as the star of the night! Good luck to all ladies and gentlemen out there!",
 "News everywhere. Collect, report and distribute news and the let the world know the journalist in you. Join as Agni reporter and gain a real time experience of being a journalist! Happy reporting!",
@@ -256,11 +256,11 @@ jQuery(document).ready(function($){
         ""
         
 	];
-    for(var i = 0;i<contact.length;i++)
+    /*for(var i = 0;i<contact.length;i++)
     {
         console.log(i+" "+contact[i]+"\n");
     }
-    
+    */
     
 	 $(".event").click(function(){
 		 var title=$(this).children().children().next().next().children().html();
