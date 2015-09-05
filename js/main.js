@@ -123,10 +123,10 @@ jQuery(document).ready(function($){
 		}
 	});
 	var event=["AGNI DUDE AND AGNI DUDETTE","AGNI REPORTER","BANDS","BOX FOOTBALL","CEG KU PUTHUSU","CONNECTIONS","CROSSIE","DOODLES","DUAL DANCE","DUBSMASH","EGG SHELL PAINTING","ENGLISH DEBATE","FACE PAINTING","FICTION WRITING","FIRELESS COOKING","GAMINDROME","GROUP DANCE","GROUPIE","GULLY CRICKET","INDIA QUIZ","JAM","KAVITHAI ","KOLLY QUIZ","MATERIAL HUNT","MEHANDHI","MONOACTING","NEWSPAPER DRESSING","ONLINE PHOTOGRAPHY","PHOTO HUNT","RANGOLI","SCRABBLE","SHERLOCK","SHORT FILM","SITHIRAM PESUTHADI","SOLO DANCE","SPORTS","SUDOKU","TAMIL DEBATE","TREASURE HUNT","MOVIE SPOOF","VEG CARVING","VOCALS(OPEN GENRE)"];
-    /*for(var i  = 0;i < event.length; i++)
+    for(var i  = 0;i < event.length; i++)
     {
         console.log(i+". "+event[i]+"\n");
-    }*/
+    }
 	 var description=[
 	 "Witness here how beauty coincides with talent and creates a lovely spirit and sparkle! Participate and gain the chances of being crowned as the star of the night! Good luck to all ladies and gentlemen out there!",
 "News everywhere. Collect, report and distribute news and the let the world know the journalist in you. Join as Agni reporter and gain a real time experience of being a journalist! Happy reporting!",
@@ -168,6 +168,7 @@ jQuery(document).ready(function($){
 "People who have a variety of talents to display, never mind in showcasing it here! Agni gives a warm welcome to all those happy, joyful, energetic minds to come aboard on 'variety show'. May the force be with you!",
 "Carve vegetables to form beautiful objects. The products of vegetable carving are generally flowers or birds; however, the only limit is one’s imagination. Marvel and flaunt the art of vegetable carving !",
 "With the seven swaras taking us beyond the  seven wonders, grace our event and embrace our souls. So come on and raise your voicespeak your mind and make some noise at agni's 'Vocals' to bring out the best voices in you!"];
+    
 	var rules=["<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br><ul><li>Each band will have 10 mins on stage including set up</li><li>A basic drumkit will be provided </li><li>All other  instruments should be brought by the participants</li><ul>",
 			   "<strong>Rules :</strong><br>",
@@ -179,9 +180,9 @@ jQuery(document).ready(function($){
 			   "<strong>Rules :</strong><br><ul>Track length : 5-5:30<li>Only boy-boy, girl-girl combination, no mixed combo allowed-</li><li>Any language songs allowed</li><li>Dangerous props not allowed</li><li>Any language songs, no dangerous props</li><li>no marketing/promotional costumes to be worn</li><li>track will be cut if it exceeds time limit</li><li>No preference for any particular style of dance</li></ul>",
 			   "<strong>Rules :</strong><br><ul><li>Open theme.</li><li>Prizes will be based on the number of Facebook likes.</li><li>Entries with vulgar content will be disqualified.</li><li>Judges' decision will be final.</li><li>Post your entries with #asceg</li></ul>",
 			   "<strong>Rules :</strong><br><ul><li>Each team should consist of only one people.</li><li>The theme will be announced on the spot</li><li>The time limit is 1:30 hour</li><li>Participants will be judged on the basis of creativity, innovation and design.</li><li>Decision of the judges will be final and binding</li><li>Materials will be provided</li></ul>",
-			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul>The Elementary Rules:<li>Each team is to have two members.</li> <li>If you do not have a team member, yet wish to participate, please register yourself. We will help you find a team mate.</li><li>Debates will be held between two teams, one opposing and the other proposing the notion.</li><li>The topics will be provided 5 minutes before the event; the 5 minutes being prep time.</li><li>1 minute of prep time will be provided before the rebuttal round.</li><li>There will be two preliminary rounds and one final round. Depending upon the number of participants, the number of rounds may change.</li><li>Objectionable language is strictly prohibited.</li><li>Points of information are allowed.</li></ul><ul>Points of Information(POI)<li>A Point of Information is be a statement or question directed to a speaker during his/her speech, by the other team.</li><li>30 seconds – to ask one POI</li><li>A gap of 45 seconds between POIs.</li><li>Must be phrased as a question.</li><li>A speaker may Accepting the question by acknowledging the person raising the POI and continuing to answer it.</li><li>Accepting the POI but announce to take it at a later stage.</li><li>Deny the raised point.</li><li>Acceptance or denial of the POI is the sole discretion of the speaker. No points will be given if neither the team asks nor answers any POIs.</li><li>The first 45 seconds of any speech is the protected time, during which POIs cannot be raised</li></ul><ul>Prelims<li>6 minute speech time – for both speakers. </li><li>3 minutes rebuttal time – for one speaker from each team</li><li>5 minutes question session – by audience and judges.</li></ul><ul>Finals<li>8 minute speech time – for both speakers. </li><li>4 minutes rebuttal time – for one speaker from each team</li><li>5 minutes question session – by audience and judges.</li></ul>",
 			   "<strong>Rules :<br></strong><br><ul><li>Each team should consist of 2 people</li><li>The theme will be announced on the spot</li><li>Participants will be judged on the basis of creativity, innovation and design.</li><li>Decision of the judges will be final and binding</li></ul>",
-			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul><li>Time: 90 min</li><li>1.	The word limit for the story is 300-500 words.</li><li>2.	Participants get three prompts to choose from and write on.</li><li>3.	Get as creative as possible but strictly stick to prose format.</li><li>4.	There will be no extension of the time limit.</li></ul>",
 			   "<strong>Rules :</strong><br><ul><li>1. Each team should consist of 2 people</li><li>2. The theme will be announced on the spot</li><li>3. The time limit is 1 hour </li><li>4. Participants will be judged on the basis of creativity, innovation and design.  </li><li>5. Decision of the judges will be final and binding</li><li>6. Materials will be provided</li></ul>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br><ul><li>Track length : 5 - 6 minutes</li><li>Team limit : 25 people, on stage - 15</li><li>Any language songs, no dangerous props</li><li>no marketing/promotional costumes to be worn</li><li>track will be cut if it exceeds time limit</li><li>No preference for any particular style of dance</li></ul>",
@@ -211,51 +212,72 @@ jQuery(document).ready(function($){
 			   "<strong>Rules :</strong><br><ul><li>1. Each team should consist of 2 people</li><li>2. The theme will be announced on the spot</li><li>3. The time limit is 1 hour </li><li>4. Participants will be judged on the basis of creativity, innovation and design.</li><li>5. Decision of the judges will be final and binding</li><li>6. Materials will be provided</li></ul>",
 			   "<strong>Rules :</strong><br><ul><li>Solo singing 3 mins per person for prelims</li><li>5 ppl gets selected  to the finals</li></li>5 mins per person for finals</li>",
 			  ];
+    rules[21] += "<ul><li>1 மணி நேரம்</li><li>ஹைக்கூ முறையில்  புகைப்படங்களைக் கொண்டு கவிதை புனையப் பட வேண்டும்.</li><li>பிற மொழி வார்த்தை கலந்திரல் கூடாது.</li><li>தனி நபர் பங்கேற்பு.</li></ul>"
+    rules[33] +="<ul><li>1 மணி நேரம்</li><li>புகைப்படங்களைக் கொண்டு கதை சித்தரிக்க வேண்டும்.</li><li>ிற மொழி வார்த்தை கலந்திரல் கூடாது.</li><li>தனி நபர் பங்கேற்பு.</li></ul>"
+    //சித்திரம் பேசுதடி:மூவேந்தர்:
+    rules[37] +="<ul><li>குழுக்களிடையேயான பேச்சுப் போர்.</li><li>குழுவுக்கு மூன்று பேர் பங்கேற்க வேண்டும்.</li><li>பிறமொழி வார்த்தை கலந்திரல் கூடாது.</li></ul>" 
+//ஊமைவிழிகள்:
+    rules[22] += "<ul><li>குழுவுக்கு மூன்று பேர் பங்கேற்க வேண்டும்.</li><li>கொடுக்கப்படும் தமிழ் வாக்கியம் சைகையின் மூலம் குழுவின் மற்ற உறுப்பினர்களுக்கு உணர்த்தப் படல் வேண்டும்.</li></ul>"
 	var contact=[
 		"",
 		"",
+		"Rahul - 9597778206<br>Sudhir - 9790704778",
 		"",
 		"",
 		"",
 		"",
-		"",
-		"",
-		"",
+		"Sushena -9176481781<br>Akshaya - 9840115589",
+		"Navin - 8220417380",
 		"K. Vignesh - 8903234414",//dub
+		"Thivagar- 9042990560<br>Sujanitha - 8939212230",
 		"",
+		"Thivagar- 9042990560<br>Sujanitha - 8939212230",
+		"Dharini.B :96770-76039<br>Gayathri Govindarajan : 80561-44282",
+		"Thivagar- 9042990560<br>Sujanitha - 8939212230",
 		"",
-		"",
-		"",
-		"",
-		"",
-		"",
+		"Nandhan Krishnan - 9600609893",
 		"M. Vishnu - 9042222681",//group
 		"",
 		"",
 		"",
 		"",
 		"",
+		"NANDHA PHN NO:9677386996",
+		"Sushena -9176481781<br>Akshaya - 9840115589",
 		"",
-		"",
-		"",
-		"",
+		"Srinath :8682881734<br>Pooludaiyar:9500925483",
 		"R. Rajasekar - 9790685951",//on
 		"",
-		"",
+		"Sushena -9176481781<br>Akshaya - 9840115589",
 		"",
 		"",
 		"Raagul Ram : 9710716120<br>Lavanya : 8056163862",
 		"",
-		"",
+		"Kannan - 9894317232",
 		"Raja : 9629314522",
 		"",
 		"",
 		"Ganapathy phn no: 9487140854",
 		"",
-		"",
-        ""
+		"Thivagar- 9042990560<br>Sujanitha - 8939212230",
+        "Joshua - 9176703615<br>Mansi - 9791270407"
         
 	];
+    
+    contact[33] = "Vinodh Kanna - 8056470830";
+    contact[32] = "Vignesh - 9600346521"
+    contact[1] = "Jai karthik - 9003694954"
+    //contact[22] = "Jai karthik - 9003694954"
+    //contact[37] = "Jai karthik - 9003694954";
+    contact[19] = "Krishna - 8122979309"
+    contact[5] = "Sowmiya Ganesh - 9677137017"
+    contact[6] = "Sowmiya Ganesh - 9677137017"
+    contact[30] = "Sowmiya Ganesh - 9677137017"
+    contact[36] = "Sowmiya Ganesh - 9677137017"
+    contact[39] = "Ilamurugan - 9489223350<b>Naveen Raja - 9894434373"
+    description[20] = "The object of the game is for panelists to talk for sixty seconds on a given subject, 'without hesitation, repetition or deviation'. There will be 6 panelists at a time. The question will be given on the spot and will be read by the moderator(‘mod’). The panelist to press the buzzer first will start or the mod will chose the first panelist to speak."
+    rules[20] += "<ul><li>1. The panelist that manages to speak for 60 seconds first is the winner.</li><li>2. It is strictly an Individual event.</li><li>3. Points are given at the mod’s discretion.</li></ul>"
+    contact[20] = "Vibha Sridhar - 9551732289"
     /*for(var i = 0;i<contact.length;i++)
     {
         console.log(i+" "+contact[i]+"\n");
