@@ -122,7 +122,7 @@ jQuery(document).ready(function($){
 			}
 		}
 	});
-	var event=["AGNI DUDE AND AGNI DUDETTE","AGNI REPORTER","BANDS","BOX FOOTBALL","CEG KU PUTHUSU","CONNECTIONS","CROSSIE","DOODLES","DUAL DANCE","DUBSMASH","EGG SHELL PAINTING","ENGLISH DEBATE","FACE PAINTING","FICTION WRITING","FIRELESS COOKING","GAMINDROME","GROUP DANCE","GROUPIE","GULLY CRICKET","INDIA QUIZ","JAM","KAVITHAI ","KOLLY QUIZ","MATERIAL HUNT","MEHANDHI","MONOACTING","NEWSPAPER DRESSING","ONLINE PHOTOGRAPHY","PHOTO HUNT","RANGOLI","SCRABBLE","SHERLOCK","SHORT FILM","SITHIRAM PESUTHADI","SOLO DANCE","SPORTS","SUDOKU","TAMIL DEBATE","TREASURE HUNT","MOVIE SPOOF","VEG CARVING","VOCALS(OPEN GENRE)"];
+	var event=["AGNI DUDE AND AGNI DUDETTE","AGNI REPORTER","BATTLE OF BANDS","BOX FOOTBALL","CEG KU PUTHUSU","CONNECTIONS","CROSSIE","DOODLES","DUAL DANCE","DUBSMASH","EGG SHELL PAINTING","ENGLISH DEBATE","FACE PAINTING","FICTION WRITING","FIRELESS COOKING","GAMINDROME","GROUP DANCE","GROUPIE","GULLY CRICKET","GENERAL QUIZ","JAM","ஹைக்கூ கவிஞன் ","ஊமைவிழிகள்","MATERIAL HUNT","MEHANDHI","MONOACTING","NEWSPAPER DRESSING","ONLINE PHOTOGRAPHY","PHOTO HUNT","RANGOLI","SCRABBLE","SHERLOCK","SHORT FILM","சித்திரம் பேசுதடி","SOLO DANCE","SPORTS","SUDOKU","மூவேந்தர்","TREASURE HUNT","MOVIE SPOOF","VEG CARVING","VOCALS(OPEN GENRE)"];
     for(var i  = 0;i < event.length; i++)
     {
         console.log(i+". "+event[i]+"\n");
@@ -212,12 +212,21 @@ jQuery(document).ready(function($){
 			   "<strong>Rules :</strong><br><ul><li>1. Each team should consist of 2 people</li><li>2. The theme will be announced on the spot</li><li>3. The time limit is 1 hour </li><li>4. Participants will be judged on the basis of creativity, innovation and design.</li><li>5. Decision of the judges will be final and binding</li><li>6. Materials will be provided</li></ul>",
 			   "<strong>Rules :</strong><br><ul><li>Solo singing 3 mins per person for prelims</li><li>5 ppl gets selected  to the finals</li></li>5 mins per person for finals</li>",
 			  ];
+    rules[19] +="<ul><li>1.Two or three persons in a team(Maximum 3)</li><li>2.Lonewolves are also allowed.</li><li>3.The first round is the prelims which will be a written round.</li><li>3.Six teams will be selected for the finals.</li><li>4.The finals will be oral which will consist of several rounds.</li></ul>";
+    //console.log(rules[20]);
+    rules[36] += "<ul><li>1. Bring a partner. Lone wolves are also welcome!</li><li>2. This event consist of two rounds with increased level of difficulty.</li><li>3. Time limit for round 1 - 30 mins and for round 2 1 hr</li><li>4. Decision of the judges is final.</li></ul>"
     rules[21] += "<ul><li>1 மணி நேரம்</li><li>ஹைக்கூ முறையில்  புகைப்படங்களைக் கொண்டு கவிதை புனையப் பட வேண்டும்.</li><li>பிற மொழி வார்த்தை கலந்திரல் கூடாது.</li><li>தனி நபர் பங்கேற்பு.</li></ul>"
     rules[33] +="<ul><li>1 மணி நேரம்</li><li>புகைப்படங்களைக் கொண்டு கதை சித்தரிக்க வேண்டும்.</li><li>ிற மொழி வார்த்தை கலந்திரல் கூடாது.</li><li>தனி நபர் பங்கேற்பு.</li></ul>"
+    rules[6] +="<ul><li>1. Two per team. Lone wolves are also welcome!</li><li>2. Time limit is 45 mins.</li><li>3. Decision of the judges is final.</li></ul>"
+    rules[18] +="<ul><li>1.only 4 players in a team </li><li>2.4 overs per team</li><li>3.umpire decision is final </li><li>4.registration fees-100 </li><li>5.on spot registration</li></ul>"
     //சித்திரம் பேசுதடி:மூவேந்தர்:
     rules[37] +="<ul><li>குழுக்களிடையேயான பேச்சுப் போர்.</li><li>குழுவுக்கு மூன்று பேர் பங்கேற்க வேண்டும்.</li><li>பிறமொழி வார்த்தை கலந்திரல் கூடாது.</li></ul>" 
 //ஊமைவிழிகள்:
+    rules[3] +="<ul><li>5 players per team and 3(rolling sub)</li><li>Registration fees :100</li><li>Timinig-5+2</li></ul>"
     rules[22] += "<ul><li>குழுவுக்கு மூன்று பேர் பங்கேற்க வேண்டும்.</li><li>கொடுக்கப்படும் தமிழ் வாக்கியம் சைகையின் மூலம் குழுவின் மற்ற உறுப்பினர்களுக்கு உணர்த்தப் படல் வேண்டும்.</li></ul>"
+    rules[15] +="<ul>Call Of Duty Modern Warfare(COD)<li>*Promod only(no perks are allowed)</li><li>*Search and Destroy match</li><li>*A team of four</li><li>*Knockout match</li><li>*registration fee- 100</li></ul><ul>FIFA<li>*5 mins for a match</li><li>*knockout match</li><li>*registration fee-50</li><li>*participants should bring the joystick</li></ul>"
+    rules[5] +=rules[6]
+    rules[30] += rules[6]
 	var contact=[
 		"",
 		"",
@@ -263,17 +272,21 @@ jQuery(document).ready(function($){
         "Joshua - 9176703615<br>Mansi - 9791270407"
         
 	];
-    
+    contact[18] = "Satheesh kumar: 9176411260"
+    contact[11] = "Siddharth- +91 91-76-868200<br>Karthick- +91 96-77-276226"
     contact[33] = "Vinodh Kanna - 8056470830";
     contact[32] = "Vignesh - 9600346521"
     contact[1] = "Jai karthik - 9003694954"
     //contact[22] = "Jai karthik - 9003694954"
     //contact[37] = "Jai karthik - 9003694954";
+    contact[22] = "Thivagar :9042990560"
+    contact[21] = "Preetha :9487458667"
     contact[19] = "Krishna - 8122979309"
     contact[5] = "Sowmiya Ganesh - 9677137017"
     contact[6] = "Sowmiya Ganesh - 9677137017"
     contact[30] = "Sowmiya Ganesh - 9677137017"
     contact[36] = "Sowmiya Ganesh - 9677137017"
+    contact[37] = "Ananthi :9962609420"
     contact[39] = "Ilamurugan - 9489223350<b>Naveen Raja - 9894434373"
     description[20] = "The object of the game is for panelists to talk for sixty seconds on a given subject, 'without hesitation, repetition or deviation'. There will be 6 panelists at a time. The question will be given on the spot and will be read by the moderator(‘mod’). The panelist to press the buzzer first will start or the mod will chose the first panelist to speak."
     rules[20] += "<ul><li>1. The panelist that manages to speak for 60 seconds first is the winner.</li><li>2. It is strictly an Individual event.</li><li>3. Points are given at the mod’s discretion.</li></ul>"
@@ -290,7 +303,10 @@ jQuery(document).ready(function($){
 		 for(var i=0;;i++)
 		 {
 			 if(event[i]==title)
-			 {
+			 {   if(title == "GENERAL QUIZ")
+                {
+                    console.log(i+" "+rules[i]);
+                }
 				 $("#description").html(description[i]);
 				 $("#rules").html(rules[i]);
 				 $("#contact").html(contact[i]);
