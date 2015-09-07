@@ -449,7 +449,7 @@ Agni’15 will be organized from the 10th -12th of September 2015. Come enjoy th
 	</div>
 		<div id="popup">
   				<div class="modal-dialog">
-					<div class="modal-content" style="height:40vh;">
+					<div class="modal-content" style="height:80vh;">
 						<div class="modal-header">
 							<button type="button" id="eventsclose" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
 							<h3 class="modal-title signin" id="lineModalLabel" style="font-family:'Marvel','sans-serif';">Sign In</h3>
