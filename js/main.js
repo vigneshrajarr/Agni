@@ -170,8 +170,8 @@ jQuery(document).ready(function($){
 "With the seven swaras taking us beyond the  seven wonders, grace our event and embrace our souls. So come on and raise your voicespeak your mind and make some noise at agni's 'Vocals' to bring out the best voices in you!"];
     
 	var rules=["<strong>Rules :</strong><br>",
-			   "<strong>Rules :</strong><br><ul><li>Each band will have 10 mins on stage including set up</li><li>A basic drumkit will be provided </li><li>All other  instruments should be brought by the participants</li><ul>",
 			   "<strong>Rules :</strong><br>",
+			   "<strong>Rules :</strong><br><ul><li>Each band will have 10 mins on stage including set up</li><li>A basic drumkit will be provided </li><li>All other  instruments should be brought by the participants</li><ul>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
 			   "<strong>Rules :</strong><br>",
@@ -213,21 +213,24 @@ jQuery(document).ready(function($){
 			   "<strong>Rules :</strong><br><ul><li>Solo singing 3 mins per person for prelims</li><li>5 ppl gets selected  to the finals</li></li>5 mins per person for finals</li>",
 			  ];
     rules[19] +="<ul><li>1.Two or three persons in a team(Maximum 3)</li><li>2.Lonewolves are also allowed.</li><li>3.The first round is the prelims which will be a written round.</li><li>3.Six teams will be selected for the finals.</li><li>4.The finals will be oral which will consist of several rounds.</li></ul>";
+    rules[1] +="<ul><li>Team of 2.</li> <li>Round 1 :Given a time span of 2 hours, Participants would be asked to write a report on any one of the agni event going around the campus.</li><li>Round 2 : Muted video - A video will be played on mute and the participants would be asked to lip sync and report it.</li><li>Round 3 : Role play: Interviewing personalities by taking turns.</li></ul>"
     //console.log(rules[20]);
     rules[36] += "<ul><li>1. Bring a partner. Lone wolves are also welcome!</li><li>2. This event consist of two rounds with increased level of difficulty.</li><li>3. Time limit for round 1 - 30 mins and for round 2 1 hr</li><li>4. Decision of the judges is final.</li></ul>"
     rules[21] += "<ul><li>1 மணி நேரம்</li><li>ஹைக்கூ முறையில்  புகைப்படங்களைக் கொண்டு கவிதை புனையப் பட வேண்டும்.</li><li>பிற மொழி வார்த்தை கலந்திரல் கூடாது.</li><li>தனி நபர் பங்கேற்பு.</li></ul>"
     rules[33] +="<ul><li>1 மணி நேரம்</li><li>புகைப்படங்களைக் கொண்டு கதை சித்தரிக்க வேண்டும்.</li><li>ிற மொழி வார்த்தை கலந்திரல் கூடாது.</li><li>தனி நபர் பங்கேற்பு.</li></ul>"
-    rules[6] +="<ul><li>1. Two per team. Lone wolves are also welcome!</li><li>2. Time limit is 45 mins.</li><li>3. Decision of the judges is final.</li></ul>"
+    rules[6] +="<ul><li>1. Two per team. Lone wolves are also welcome!</li><li>2. Time limit is 1 1/2 hrs.</li><li>3. Decision of the judges is final.</li></ul>"
     rules[18] +="<ul><li>1.only 4 players in a team </li><li>2.4 overs per team</li><li>3.umpire decision is final </li><li>4.registration fees-100 </li><li>5.on spot registration</li></ul>"
     //சித்திரம் பேசுதடி:மூவேந்தர்:
     rules[37] +="<ul><li>குழுக்களிடையேயான பேச்சுப் போர்.</li><li>குழுவுக்கு மூன்று பேர் பங்கேற்க வேண்டும்.</li><li>பிறமொழி வார்த்தை கலந்திரல் கூடாது.</li></ul>" 
 //ஊமைவிழிகள்:
     rules[3] +="<ul><li>5 players per team and 3(rolling sub)</li><li>Registration fees :100</li><li>Timinig-5+2</li></ul>"
     rules[22] += "<ul><li>குழுவுக்கு மூன்று பேர் பங்கேற்க வேண்டும்.</li><li>கொடுக்கப்படும் தமிழ் வாக்கியம் சைகையின் மூலம் குழுவின் மற்ற உறுப்பினர்களுக்கு உணர்த்தப் படல் வேண்டும்.</li></ul>"
-    rules[15] +="<ul>FIFA<li>*5 mins for a match</li><li>*knockout match</li><li>*registration fee-50</li><li>*participants should bring the joystick</li></ul><ul>Call Of Duty Modern Warfare(COD)<li>*Promod only(no perks are allowed)</li><li>*Search and Destroy match</li><li>*A team of four</li><li>*Knockout match</li><li>*registration fee- 100</li></ul><ul>Mobile Games<li>Registration Rs.10</li></ul>"
+    rules[15] +="<ul><b>FIFA</b><li>*5 mins for a match</li><li>*knockout match</li><li>*registration fee-50</li><li>*participants should bring the joystick</li></ul><ul><b>Call Of Duty Modern Warfare(COD)</b><li>*Promod only(no perks are allowed)</li><li>*Search and Destroy match</li><li>*A team of four</li><li>*Knockout match</li><li>*registration fee- 100</li></ul><ul><b>Mobile Games</b><li>Registration Rs.10</li></ul>"
     rules[5] +=rules[6]
     rules[30] += rules[6]
     rules[23] +="<ul><li>1.max 2-3 no of persons</li><li>2.timing between 10.30 to 3.30 </li><li>3.results will be announced at 4.30</li> <li>4.collected materials should be produced at the help desk</li><li>5.the team producing the maximum no of materials will be declared winners if there is a tie timing will be taken into consideration.</li></ul>"
+    //rules[31] += "<ul><li></li></ul>"//sherlock
+    rules[25] +="<ul><li>Any topic can be chosen by the participant.</li><li>3 minutes on stage will be allowed to each participant.</li><li>Any kind of vulgarity will result in disqualification.</li><li>No references to the names of the people should be used.</li></ul>"//mono acting
 	var contact=[
 		"",
 		"",
@@ -273,7 +276,7 @@ jQuery(document).ready(function($){
         "Joshua - 9176703615<br>Mansi - 9791270407"
         
 	];
-    contact[31] = "Hari Prasad - 9790886711
+    contact[31] = "Hari Prasad - 9790886711"
     contact[23] = "Praveen - 9176270678"
     contact[3] = "Siva Kumar - 9444652580"
     contact[25] = "Imran - 9176154552<br>Adhithya - 9677270929"
@@ -295,7 +298,6 @@ jQuery(document).ready(function($){
     contact[30] = "Sowmiya Ganesh - 9677137017"
     contact[36] = "Sowmiya Ganesh - 9677137017"
     contact[37] = "Ananthi :9962609420"
-    contact[31] = ""
     contact[39] = "Ilamurugan - 9489223350<b>Naveen Raja - 9894434373"
     description[20] = "The object of the game is for panelists to talk for sixty seconds on a given subject, 'without hesitation, repetition or deviation'. There will be 6 panelists at a time. The question will be given on the spot and will be read by the moderator(‘mod’). The panelist to press the buzzer first will start or the mod will chose the first panelist to speak."
     rules[20] += "<ul><li>1. The panelist that manages to speak for 60 seconds first is the winner.</li><li>2. It is strictly an Individual event.</li><li>3. Points are given at the mod’s discretion.</li></ul>"
