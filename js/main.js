@@ -224,9 +224,10 @@ jQuery(document).ready(function($){
 //ஊமைவிழிகள்:
     rules[3] +="<ul><li>5 players per team and 3(rolling sub)</li><li>Registration fees :100</li><li>Timinig-5+2</li></ul>"
     rules[22] += "<ul><li>குழுவுக்கு மூன்று பேர் பங்கேற்க வேண்டும்.</li><li>கொடுக்கப்படும் தமிழ் வாக்கியம் சைகையின் மூலம் குழுவின் மற்ற உறுப்பினர்களுக்கு உணர்த்தப் படல் வேண்டும்.</li></ul>"
-    rules[15] +="<ul>Call Of Duty Modern Warfare(COD)<li>*Promod only(no perks are allowed)</li><li>*Search and Destroy match</li><li>*A team of four</li><li>*Knockout match</li><li>*registration fee- 100</li></ul><ul>FIFA<li>*5 mins for a match</li><li>*knockout match</li><li>*registration fee-50</li><li>*participants should bring the joystick</li></ul>"
+    rules[15] +="<ul>FIFA<li>*5 mins for a match</li><li>*knockout match</li><li>*registration fee-50</li><li>*participants should bring the joystick</li></ul><ul>Call Of Duty Modern Warfare(COD)<li>*Promod only(no perks are allowed)</li><li>*Search and Destroy match</li><li>*A team of four</li><li>*Knockout match</li><li>*registration fee- 100</li></ul><ul>Mobile Games<li>Registration Rs.10</li></ul>"
     rules[5] +=rules[6]
     rules[30] += rules[6]
+    rules[23] +="<ul><li>1.max 2-3 no of persons</li><li>2.timing between 10.30 to 3.30 </li><li>3.results will be announced at 4.30</li> <li>4.collected materials should be produced at the help desk</li><li>5.the team producing the maximum no of materials will be declared winners if there is a tie timing will be taken into consideration.</li></ul>"
 	var contact=[
 		"",
 		"",
@@ -251,7 +252,7 @@ jQuery(document).ready(function($){
 		"",
 		"",
 		"",
-		"NANDHA PHN NO:9677386996",
+		"",
 		"Sushena -9176481781<br>Akshaya - 9840115589",
 		"",
 		"Srinath :8682881734<br>Pooludaiyar:9500925483",
@@ -272,6 +273,12 @@ jQuery(document).ready(function($){
         "Joshua - 9176703615<br>Mansi - 9791270407"
         
 	];
+    contact[23] = "Praveen - 9176270678"
+    contact[3] = "Siva Kumar - 9444652580"
+    contact[25] = "Imran - 9176154552<br>Adhithya - 9677270929"
+    contact[0] = "Omar - 8056154435"
+    contact[4] = "Ilamurugan - 9489223350"
+    contact[15] = "Siva Kumar: 9444652580<br>Mangalamanian :9962594624"
     contact[18] = "Satheesh kumar: 9176411260"
     contact[11] = "Siddharth- +91 91-76-868200<br>Karthick- +91 96-77-276226"
     contact[33] = "Vinodh Kanna - 8056470830";
@@ -287,6 +294,7 @@ jQuery(document).ready(function($){
     contact[30] = "Sowmiya Ganesh - 9677137017"
     contact[36] = "Sowmiya Ganesh - 9677137017"
     contact[37] = "Ananthi :9962609420"
+    contact[31] = ""
     contact[39] = "Ilamurugan - 9489223350<b>Naveen Raja - 9894434373"
     description[20] = "The object of the game is for panelists to talk for sixty seconds on a given subject, 'without hesitation, repetition or deviation'. There will be 6 panelists at a time. The question will be given on the spot and will be read by the moderator(‘mod’). The panelist to press the buzzer first will start or the mod will chose the first panelist to speak."
     rules[20] += "<ul><li>1. The panelist that manages to speak for 60 seconds first is the winner.</li><li>2. It is strictly an Individual event.</li><li>3. Points are given at the mod’s discretion.</li></ul>"
